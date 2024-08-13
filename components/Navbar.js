@@ -10,22 +10,27 @@ const Navbar = () => {
     {
       id: 1,
       link: "home",
+      href: "#home",
     },
     {
       id: 2,
       link: "about",
+      href: "#about",
     },
     {
       id: 3,
       link: "projects",
+      href: "#projects",
     },
     {
       id: 4,
       link: "experience",
+      href: "#experience",
     },
     {
       id: 5,
       link: "contact",
+      href: "#contact",
     },
   ];
 
@@ -49,13 +54,12 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center w-full h-14 px-4 text-[#CCD6F6] fixed nav">
-      <div>
+      <div id="#home">
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
         <h1 className="text-4xl font-signature ml-2">
           <a
             className="link-underline link-underline-black"
             href=""
-            target="_blank"
             rel="noreferrer">
             Logo
           </a>
@@ -64,11 +68,11 @@ const Navbar = () => {
 
       {/* looping through the links array to display the navbar links */}
       <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
+        {links.map(({ id, link, href }) => (
           <li
             key={id}
             className="nav-links px-4 cursor-pointer capitalize font-medium text-[#CCD6F6] hover:scale-125 duration-200 link-underline hover:text-[#64FFDA]">
-            <Link href={link}>{link}</Link>
+            <Link href={href}>{link}</Link>
           </li>
         ))}
       </ul>
