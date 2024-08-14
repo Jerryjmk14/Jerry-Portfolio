@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="sm:flex sm:flex-col sm:items-center sm:mx-32">
+    <section className=" p-6 sm:flex sm:flex-col sm:items-center sm:mx-32">
       <div className="flex content-center border-b-4 border-[#64FFDA] mb-3 ">
         <h1
           id="about"

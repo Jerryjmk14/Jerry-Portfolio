@@ -19,13 +19,13 @@ const Navbar = () => {
     },
     {
       id: 3,
-      link: "projects",
-      href: "#projects",
+      link: "skills",
+      href: "#skills",
     },
     {
       id: 4,
-      link: "experience",
-      href: "#experience",
+      link: "projects",
+      href: "#projects",
     },
     {
       id: 5,
