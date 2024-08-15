@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { FaCode } from "react-icons/fa6";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -58,10 +59,11 @@ const Navbar = () => {
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
         <h1 className="text-4xl font-signature ml-2">
           <a
-            className="link-underline link-underline-black"
+            className="link-underline link-underline-black flex hover:scale-125 duration-200 font-mono hover:text-[#64FFDA]"
             href=""
             rel="noreferrer">
-            Logo
+            <FaCode />
+            <span>JE</span>
           </a>
         </h1>
       </div>
