@@ -53,7 +53,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex justify-between items-center w-full h-14 px-4 text-[#CCD6F6] fixed nav">
+    <div className="flex justify-between z-20 items-center w-full h-14 px-4 bg-indigo-950 text-[#CCD6F6] fixed nav">
       <div id="#home">
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
         <h1 className="text-4xl font-signature ml-2">
@@ -80,13 +80,13 @@ const Navbar = () => {
       {/* toggle functionality for hamburgar menu */}
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-[#CCD6F6] md:hidden hover:text-[#64FFDA]">
+        className="cursor-pointer pr-4 z-30 text-[#CCD6F6] md:hidden hover:text-[#64FFDA]">
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
       {/* dropdown navbar links */}
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-darkblue-951 to-gray-700 text-[#CCD6F6] ">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full z-20 h-screen bg-gradient-to-b from-darkblue-951 to-gray-700 text-[#CCD6F6] ">
           {links.map(({ id, link }) => (
             <li
               key={id}

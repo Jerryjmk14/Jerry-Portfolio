@@ -2,8 +2,8 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className=" p-6 sm:flex sm:flex-col sm:items-center sm:mx-32">
-      <div className="flex content-center border-b-4 border-[#64FFDA] mb-3 ">
+    <section className=" p-6 sm:flex sm:flex-col sm:items-center mb-16 sm:mx-32">
+      <div className="flex content-center border-b-4 border-[#64FFDA] mb-4 ">
         <h1
           id="about"
           className="text-white sm:text-center text-4xl font-semibold p-1">

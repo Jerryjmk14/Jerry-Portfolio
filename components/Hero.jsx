@@ -9,8 +9,8 @@ export default function Hero() {
     <section className="text-gray-600 body-font pt-12 mx-2">
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <p className="text-[#64FFDA] font-medium">Hi, my name is</p>
-          <h1 className="title-font sm:text-6xl text-4xl font-medium text-[#CCD6F6]">
+          <p className=" text-2xl font-medium text-[#CCD6F6]">Hi, my name is</p>
+          <h1 className="title-font sm:text-6xl text-4xl font-medium text-[#64FFDA] ">
             Jeremiah Egwa
             {/* <br class="hidden lg:inline-block">readymade gluten/</br>Name */}
           </h1>
@@ -21,10 +21,14 @@ export default function Hero() {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima,
             veniam.
           </p>
-          <div className="flex justify-between items-center gap-1 sm:gap-3 md:gap-4 mt-5 cursor-pointer">
-            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-[#64FFDA] hover:scale-110 duration-200 hover:text-black rounded text-lg animate-pulse">
+
+          {/* Hero button and social media links */}
+          <div className="sm:flex justify-between items-center gap-1 sm:gap-3 md:gap-4 mt-5 cursor-pointer">
+            <button className="inline-flex mb-8 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-[#64FFDA] hover:scale-110 duration-200 hover:text-black rounded text-lg animate-pulse">
               Projects
             </button>
+
+            {/* Social media links */}
             <div className="flex justify-between items-center gap-1 sm:gap-3 md:gap-4">
               <div className="bg-indigo-500 rounded-full p-4 text-white  hover:bg-[#64FFDA] hover:scale-110 duration-200 hover:text-black text-lg cursor-pointer animate-bounce">
                 <FaLinkedinIn />
@@ -35,12 +39,14 @@ export default function Hero() {
               <div className="bg-indigo-500 rounded-full p-4 text-white hover:bg-[#64FFDA] hover:scale-110 duration-200 hover:text-black text-lg cursor-pointer animate-bounce">
                 <FaXTwitter />
               </div>
-              <div className="bg-indigo-500 rounded-full border p-4 border-black text-white hover:bg-[#64FFDA] hover:scale-110 duration-200 hover:text-black text-lg cursor-pointer animate-bounce">
+              <div className="bg-indigo-500 rounded-full border p-4 z-10 border-black text-white hover:bg-[#64FFDA] hover:scale-110 duration-200 hover:text-black text-lg cursor-pointer animate-bounce">
                 <FaWhatsapp />
               </div>
             </div>
           </div>
         </div>
+
+        {/* Hero image */}
         <div className="lg:max-w-xs lg:w-full md:w-1/2 w-5/6 hover:scale-110 duration-200 shadow-lg shadow-black p-3 rounded-xl bg-indigo-900 animate-pulse">
           <img
             className="object-cover object-center rounded-2xl border border-[#64FFDA] "
