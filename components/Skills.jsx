@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Skills() {
   const skillsImage = [
@@ -24,11 +25,11 @@ export default function Skills() {
     },
   ];
   return (
-    <section className="w-full sm:text-center mt-4 p-6 sm:p-14">
+    <section
+      id="skills"
+      className="w-full bg-[#0D314B] sm:text-center mt-4 p-12 sm:p-14">
       <div className="sm:inline-block sm:w-auto mx-auto border-b-4 border-[#64FFDA] mb-4">
-        <h1
-          id="about"
-          className="text-white sm:text-center text-4xl font-semibold p-1">
+        <h1 className="text-white sm:text-center text-4xl font-semibold p-1">
           Skills
         </h1>
       </div>
@@ -36,16 +37,19 @@ export default function Skills() {
         Some skills I have and technologies I have worked with.
       </h2>
       {/* Skills Cards */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:mx-12">
+      <div className="grid grid-cols-2 gap-6 md:grid-cols-4 sm:mx-12">
+        {/* Mapping through the projectImg array to display project image cards */}
         {skillsImage.map(({ id, name, imgUrl }) => {
           return (
             <div
               key={id}
               className="shadow-lg shadow-black p-3 rounded-xl hover:scale-110 duration-200">
-              <img
+              <Image
                 className="object-cover object-center rounded-xl"
                 src={imgUrl}
                 alt={name}
+                width={500}
+                height={500}
               />
               <h2 className="mt-1">{name}</h2>
             </div>

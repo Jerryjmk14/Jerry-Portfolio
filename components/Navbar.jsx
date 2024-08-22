@@ -11,7 +11,7 @@ const Navbar = () => {
     {
       id: 1,
       link: "home",
-      href: "#home",
+      href: "#hero",
     },
     {
       id: 2,
@@ -54,13 +54,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex justify-between z-20 items-center w-full h-14 px-4 bg-indigo-950 text-[#CCD6F6] fixed nav">
+    <div className="flex justify-between z-20 items-center w-full h-14 px-4 font-mono text-xl bg-indigo-950 text-[#CCD6F6] fixed nav">
       <div id="#home">
-        {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
+        {/* Nav Logo */}
         <h1 className="text-4xl font-signature ml-2">
           <a
             className="link-underline link-underline-black flex hover:scale-125 duration-200 font-mono hover:text-[#64FFDA]"
-            href=""
+            href="#hero"
             rel="noreferrer">
             <FaCode />
             <span>JE</span>
@@ -89,11 +89,11 @@ const Navbar = () => {
       {/* dropdown navbar links */}
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full z-20 h-screen bg-gradient-to-b from-darkblue-951 to-gray-700 text-[#CCD6F6] ">
-          {links.map(({ id, link }) => (
+          {links.map(({ id, link, href }) => (
             <li
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-4xl hover:text-[#64FFDA]">
-              <Link onClick={() => setNav(!nav)} href={link}>
+              <Link onClick={() => setNav(!nav)} href={href}>
                 {link}
               </Link>
             </li>

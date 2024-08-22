@@ -10,6 +10,8 @@ export default function Footer() {
       <h2 className="text-xl sm:text-3xl font-bold text-[#CCD6F6] mb-5">
         Jeremiah: Frontend Developer
       </h2>
+
+      {/* Social Media Icons */}
       <div className="mb-8">
         <ul className="flex gap-8">
           <li>
