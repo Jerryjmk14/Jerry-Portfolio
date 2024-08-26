@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -7,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-black p-6 flex flex-col items-center sm:flex-col">
-      <h2 className="text-xl sm:text-3xl font-bold text-[#CCD6F6] mb-5">
+      <h2 className="text-xl sm:text-3xl font-bold mb-5">
         Jeremiah: Frontend Developer
       </h2>
 
@@ -32,7 +33,7 @@ export default function Footer() {
           </li>
           <li>
             <a
-              href="https://www.twitter.com/jerryjmk"
+              href="https://www.twitter.com/jerryjmkhttps://www.twitter.com/jerryjmk"
               className="text-[#64FFDA] text-2xl font-semibold">
               <FaXTwitter className="hover:scale-125 duration-200" />
               <span class="sr-only">Twitter</span>

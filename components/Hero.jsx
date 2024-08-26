@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -34,17 +35,23 @@ export default function Hero() {
             {/* Social media links */}
             <div className="flex justify-between items-center gap-1 sm:gap-3 md:gap-4">
               <div className="bg-indigo-500 rounded-full p-4 text-white hover:bg-[#64FFDA] hover:scale-110 duration-200 hover:text-black text-lg cursor-pointer animate-bounce">
-                <FaLinkedinIn />
+                <Link href="https://www.linkedin.com/in/jeremiah-egwa-73b231255">
+                  <FaLinkedinIn />
+                </Link>
               </div>
               <div className="bg-indigo-500 rounded-full p-4 text-white hover:bg-[#64FFDA] hover:scale-110 duration-200 hover:text-black text-lg cursor-pointer animate-bounce">
-                <FaGithub />
+                <Link href="https://github.com/Jerryjmk14">
+                  <FaGithub />
+                </Link>
               </div>
               <div className="bg-indigo-500 rounded-full p-4 text-white hover:bg-[#64FFDA] hover:scale-110 duration-200 hover:text-black text-lg cursor-pointer animate-bounce">
-                <FaXTwitter />
+                <Link href="https://www.twitter.com/jerryjmk">
+                  <FaXTwitter />
+                </Link>
               </div>
-              <div className="bg-indigo-500 rounded-full border p-4 z-10 border-black text-white hover:bg-[#64FFDA] hover:scale-110 duration-200 hover:text-black text-lg cursor-pointer animate-bounce">
+              {/* <div className="bg-indigo-500 rounded-full border p-4 z-10 border-black text-white hover:bg-[#64FFDA] hover:scale-110 duration-200 hover:text-black text-lg cursor-pointer animate-bounce">
                 <FaWhatsapp />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

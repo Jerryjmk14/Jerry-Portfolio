@@ -54,7 +54,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex justify-between z-20 items-center w-full h-14 px-4 font-mono text-xl bg-indigo-950 text-[#CCD6F6] fixed nav">
+    <div className="flex justify-between z-20 items-center w-full h-14 px-4 font-mono text-xl bg-darkblue-951 text-[#CCD6F6] fixed nav">
       <div id="#home">
         {/* Nav Logo */}
         <h1 className="text-4xl font-signature ml-2">
