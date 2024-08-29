@@ -8,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section id="hero" className="text-gray-600 body-font pt-12 mx-2">
+    <section id="hero" className="text-gray-600 body-font pt-12 mx-2 md:mx-24">
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <p className=" text-2xl font-medium mb-2 text-[#CCD6F6]">
@@ -29,13 +29,13 @@ export default function Hero() {
           <div className="sm:flex justify-between sm:items-center gap-1 sm:gap-3 md:gap-4 cursor-pointer">
             {/* Hero Button */}
             <button className="inline-flex mb-8 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-[#64FFDA] hover:scale-110 duration-200 hover:text-black rounded text-lg animate-pulse">
-              Projects
+              <a href="#projects"> Projects</a>
             </button>
 
             {/* Social media links */}
             <div className="flex justify-between items-center gap-1 sm:gap-3 md:gap-4">
               <div className="bg-indigo-500 rounded-full p-4 text-white hover:bg-[#64FFDA] hover:scale-110 duration-200 hover:text-black text-lg cursor-pointer animate-bounce">
-                <Link href="https://www.linkedin.com/in/jeremiah-egwa-73b231255">
+                <Link href="https://www.linkedin.com/in/jeremiah-egwa">
                   <FaLinkedinIn />
                 </Link>
               </div>
@@ -61,7 +61,7 @@ export default function Hero() {
           <Image
             className="object-cover object-center rounded-2xl border border-[#64FFDA] "
             alt="hero"
-            src="/hero-img1.jpg"
+            src="/hero-profile-img.jpg"
             width={500}
             height={500}
             // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

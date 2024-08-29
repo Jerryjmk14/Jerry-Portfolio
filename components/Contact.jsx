@@ -46,6 +46,9 @@ export default function Contact() {
                 id="message"
                 className="p-3 min-h-24 max-h-40 w-[100%] border rounded-3xl bg-[#0D314B] border-[#64FFDA] shadow-md shadow-black"></textarea>
             </div>
+            <button className="py-2 px-16 w-full text-black border rounded-3xl bg-green-600 hover:bg-green-400 border-[#64FFDA] shadow-md shadow-black">
+              Submit
+            </button>
           </form>
         </div>
       </div>

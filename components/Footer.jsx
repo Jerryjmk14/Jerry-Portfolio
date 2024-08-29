@@ -17,7 +17,7 @@ export default function Footer() {
         <ul className="flex gap-8">
           <li>
             <a
-              href="https://www.linkedin.com/in/jeremiah-egwa-73b231255"
+              href="https://www.linkedin.com/in/jeremiah-egwa"
               className="text-[#64FFDA] text-2xl font-semibold">
               <FaLinkedinIn className="hover:scale-125 duration-200" />
               <span class="sr-only">Linkdin</span>
@@ -33,7 +33,7 @@ export default function Footer() {
           </li>
           <li>
             <a
-              href="https://www.twitter.com/jerryjmkhttps://www.twitter.com/jerryjmk"
+              href="https://www.twitter.com/jerryjmk"
               className="text-[#64FFDA] text-2xl font-semibold">
               <FaXTwitter className="hover:scale-125 duration-200" />
               <span class="sr-only">Twitter</span>
